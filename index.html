@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product List</title>
+</head>
+<body>
+  <div id="productDisplay"></div>
+
+  <script>
+    const products = [
+      { name: "Laptop", price: 800 },
+      { name: "Phone", price: 500 },
+      { name: "Table", price: 200 }
+    ];
+
+    const displayDiv = document.getElementById("productDisplay");
+
+    products.forEach(product => {
+      displayDiv.innerHTML += `Product: ${product.name}, Price: $${product.price}<br>`;
+    });
+  </script>
+</body>
+</html>
